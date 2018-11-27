@@ -4,10 +4,9 @@ const express = require("express");
 const app = express();
 const port = 6661;
 
-app.listen(port);
-() => {
+app.listen(port, () => {
   console.log(`listening on ${port}`);
-};
+});
 
 app.get("/", (req, res) => {
   res.send("THE ROUTE WORKED!");
