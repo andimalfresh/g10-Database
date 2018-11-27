@@ -3,18 +3,13 @@
 module.exports = {
   development: {
     client: "pg",
-    connection: 'g102'
+    connection: "postgresql://localhost/g102"
   },
   production: {
     client: "pg",
     connection: process.env.DATABASE_URL
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: "knex_migrations"
-    }
+  },
+  migrations: {
+    tableName: "knex_migrations"
   }
 };
