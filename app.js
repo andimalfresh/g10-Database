@@ -11,7 +11,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
-
-app.get("/", (req, res) => {
-  res.send("THE ROUTE WORKED!");
-});
